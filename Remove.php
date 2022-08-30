@@ -6,7 +6,8 @@ class Remove
 {
     public function removeExclamationMarks(string $stringGiven): string
     {
-        return str_replace("!", "", $stringGiven);
+        $replace = ["¡", "!"];
+        return str_replace($replace, "", $stringGiven);
     }
 }
 
